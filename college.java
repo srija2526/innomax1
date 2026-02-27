@@ -1,18 +1,17 @@
-package com.tns.project.entity;
+package com.example.demo.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-
 @Entity
 @Table
-public class college {
-    @Id
+
+public class College {
+	
+	@Id
     private long cid;
-	private String collegeadmin;
-	private String collegename;
-    private String location;
+	private String Csvfile;
 	
 	public long getCid() {
 		return cid;
@@ -20,24 +19,13 @@ public class college {
 	public void setCid(long cid) {
 		this.cid = cid;
 	}
-	public String getCollegeadmin() {
-		return collegeadmin;
+	public String getCsvfile() {
+		return Csvfile;
 	}
-	public void setCollegeadmin(String collegeadmin) {
-		this.collegeadmin = collegeadmin;
+	public void setCsvfile(String csvfile) {
+		Csvfile = csvfile;
 	}
-	public String getCollegename() {
-		return collegename;
-	}
-	public void setCollegename(String collegename) {
-		this.collegename = collegename;
-	}
-    public String getLocation() {
-		return location;
-	}
-	public void setLocation(String location) {
-		this.location = location;
-	}
+	
 
 
 }
